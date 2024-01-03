@@ -1,0 +1,27 @@
+{
+  "name": "lims",
+  "version": "1.0.0",
+  "description": "Laboratory Information Management System (LIMS) for Lights on Heights",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --require @babel/register",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "lims"
+  ],
+  "author": "Godfred Akpan",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^5.0.0",
+    "chai-http": "^4.4.0",
+    "cors": "^2.8.5",
+    "pg-promise": "^11.5.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.7",
+    "@babel/node": "^7.22.19",
+    "@babel/preset-env": "^7.23.7",
+    "mocha": "^10.2.0"
+  }
+}

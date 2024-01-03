@@ -1,0 +1,102 @@
+
+```markdown
+# CloudClinic Inventory Management Module
+
+## Overview
+
+CloudClinic's Inventory Management Module is an extension of the Laboratory Information Management System (LIMS). This module is designed to streamline the process of managing laboratory supplies, including tracking inventory levels, generating purchase orders, and optimizing stock levels.
+
+## Project Objectives
+
+1. **Track Inventory Levels:** Provide real-time visibility into inventory levels for all laboratory supplies.
+2. **Generate Purchase Orders:** Automatically generate purchase orders when inventory levels reach pre-defined reorder points.
+3. **Optimize Stock Levels:** Suggest optimal stock levels for different supplies based on historical usage data and lead times.
+
+## Features
+
+- **Create Supply:** Add a new laboratory supply to the inventory.
+- **Read Supply:** View details of a specific laboratory supply.
+- **Update Supply:** Modify information about an existing laboratory supply.
+- **Delete Supply:** Remove a laboratory supply from the inventory.
+
+## Tech Stack
+
+- **Frontend:** React
+- **Backend:** Node.js with Express
+- **Database:** PostgreSQL
+- **API:** RESTful API
+- **Styling:** Bootstrap
+
+## Getting Started
+
+1. **Clone the Repository:**
+
+   ```bash
+   git clone https://github.com/godfredakpan/loh-lims.git
+   cd loh-lims
+   ```
+
+2. **Install Dependencies:**
+
+   ```bash
+   # Install backend dependencies
+   cd backend
+   npm install
+
+   # Install frontend dependencies
+   cd frontend
+   npm install
+   ```
+
+3. **Database Setup:**
+
+   - Create a PostgreSQL database and configure the connection details in `../config/db.js`.
+
+   ```bash
+   psql -U postgres
+   CREATE DATABASE your_database_name;
+   ```
+
+4. **Run the Application:**
+
+   ```bash
+   # Start the backend server
+   cd backend
+   npm start
+
+   # Start the frontend development server
+   cd frontend
+   npm start
+   ```
+
+   Open your browser and navigate to [http://localhost:3000](http://localhost:3000) to access the application.
+
+## API Endpoints
+
+- **GET /api/laboratory-supplies:** Get all laboratory supplies.
+- **GET /api/laboratory-supplies/:id:** Get details of a specific laboratory supply.
+- **POST /api/laboratory-supplies:** Create a new laboratory supply.
+- **PUT /api/laboratory-supplies/:id:** Update information about a laboratory supply.
+- **DELETE /api/laboratory-supplies/:id:** Delete a laboratory supply.
+
+## Testing
+
+- Unit tests and comprehensive test cases have been implemented for the Inventory Management Module. Run tests using the following command:
+
+  ```bash
+  cd server
+  npm test
+  ```
+
+## Documentation
+
+- Detailed documentation about the database schema, API endpoints, and frontend components can be found in the `docs` folder.
+
+## Contributing
+
+Contributions are welcome! Please follow our [Contribution Guidelines](CONTRIBUTING.md) for details.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+```

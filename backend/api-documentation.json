@@ -1,0 +1,191 @@
+{
+  "collection": {
+    "info": {
+      "_postman_id": "46d89a5b-34d9-41e5-8ff4-37e7197b1f3d",
+      "name": "Lights on Heights",
+      "description": "Laboratory Information Management System (LIMS) for Lights on Heights",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+      "updatedAt": "2024-01-03T14:56:46.000Z",
+      "uid": "23218164-46d89a5b-34d9-41e5-8ff4-37e7197b1f3d"
+    },
+    "item": [
+      {
+        "name": "LIMS",
+        "item": [
+          {
+            "name": "Get All Laboratory Supplies",
+            "id": "4acb798d-432a-4f98-a56c-b5e7d1bb71d9",
+            "protocolProfileBehavior": {
+              "disableBodyPruning": true
+            },
+            "request": {
+              "method": "GET",
+              "header": [],
+              "url": {
+                "raw": "http://localhost:3001/api/laboratory-supplies",
+                "protocol": "http",
+                "host": [
+                  "localhost"
+                ],
+                "port": "3001",
+                "path": [
+                  "api",
+                  "laboratory-supplies"
+                ]
+              },
+              "description": "get all existing laboratory supplies"
+            },
+            "response": [],
+            "uid": "23218164-4acb798d-432a-4f98-a56c-b5e7d1bb71d9"
+          },
+          {
+            "name": "Get Laboratory Supply by ID",
+            "id": "8d856d54-105b-400e-8c85-953a547f7c8e",
+            "protocolProfileBehavior": {
+              "disableBodyPruning": true
+            },
+            "request": {
+              "method": "GET",
+              "header": [],
+              "url": {
+                "raw": "http://localhost:3001/api/laboratory-supplies/:id",
+                "protocol": "http",
+                "host": [
+                  "localhost"
+                ],
+                "port": "3001",
+                "path": [
+                  "api",
+                  "laboratory-supplies",
+                  ":id"
+                ],
+                "variable": [
+                  {
+                    "key": "id",
+                    "value": ""
+                  }
+                ]
+              },
+              "description": "get a single existing laboratory supply by unique ID"
+            },
+            "response": [],
+            "uid": "23218164-8d856d54-105b-400e-8c85-953a547f7c8e"
+          },
+          {
+            "name": "Create Laboratory Supply",
+            "id": "89f54afa-d0cc-416e-a80d-dcaa9fe03162",
+            "protocolProfileBehavior": {
+              "disableBodyPruning": true
+            },
+            "request": {
+              "method": "POST",
+              "header": [],
+              "body": {
+                "mode": "raw",
+                "raw": "\n{\n    \"name\": \"Sample Supply\",\n    \"quantity\": 10,\n    \"reorderPoint\": 5\n}",
+                "options": {
+                  "raw": {
+                    "language": "json"
+                  }
+                }
+              },
+              "url": {
+                "raw": "http://localhost:3001/api/laboratory-supplies",
+                "protocol": "http",
+                "host": [
+                  "localhost"
+                ],
+                "port": "3001",
+                "path": [
+                  "api",
+                  "laboratory-supplies"
+                ]
+              },
+              "description": "create and save a single laboratory supply"
+            },
+            "response": [],
+            "uid": "23218164-89f54afa-d0cc-416e-a80d-dcaa9fe03162"
+          },
+          {
+            "name": "Update Laboratory Supply",
+            "id": "e7cd067b-c518-433d-8d6d-bfee8295a541",
+            "protocolProfileBehavior": {
+              "disableBodyPruning": true
+            },
+            "request": {
+              "method": "PUT",
+              "header": [],
+              "body": {
+                "mode": "raw",
+                "raw": "\n{\n    \"name\": \"Updated Sample Supply\",\n    \"quantity\": 20,\n    \"reorderPoint\": 10\n}",
+                "options": {
+                  "raw": {
+                    "language": "json"
+                  }
+                }
+              },
+              "url": {
+                "raw": "http://localhost:3001/api/laboratory-supplies/:id",
+                "protocol": "http",
+                "host": [
+                  "localhost"
+                ],
+                "port": "3001",
+                "path": [
+                  "api",
+                  "laboratory-supplies",
+                  ":id"
+                ],
+                "variable": [
+                  {
+                    "key": "id",
+                    "value": ""
+                  }
+                ]
+              },
+              "description": "Update an exisiting laboratory supply."
+            },
+            "response": [],
+            "uid": "23218164-e7cd067b-c518-433d-8d6d-bfee8295a541"
+          },
+          {
+            "name": "Delete Laboratory Supply",
+            "id": "28e64975-8556-492f-aa4c-f96df0a715f1",
+            "protocolProfileBehavior": {
+              "disableBodyPruning": true
+            },
+            "request": {
+              "method": "DELETE",
+              "header": [],
+              "url": {
+                "raw": "http://localhost:3001/api/laboratory-supplies/:id",
+                "protocol": "http",
+                "host": [
+                  "localhost"
+                ],
+                "port": "3001",
+                "path": [
+                  "api",
+                  "laboratory-supplies",
+                  ":id"
+                ],
+                "variable": [
+                  {
+                    "key": "id",
+                    "value": "1"
+                  }
+                ]
+              },
+              "description": "delete unwanted, expired or currupted laboratory supply"
+            },
+            "response": [],
+            "uid": "23218164-28e64975-8556-492f-aa4c-f96df0a715f1"
+          }
+        ],
+        "id": "f9f7947a-ee0f-4a2a-840d-66bf31e355b2",
+        "description": "Folder to handle all request related to the LIMS",
+        "uid": "23218164-f9f7947a-ee0f-4a2a-840d-66bf31e355b2"
+      }
+    ]
+  }
+}
