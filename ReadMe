@@ -92,7 +92,8 @@ CloudClinic's Inventory Management Module is an extension of the Laboratory Info
 
 - Detailed documentation about the database schema, API endpoints, and frontend components can be found in the `docs` folder.
 
-- API Documentation: [https://documenter.getpostman.com/view/23218164/2s9YsFEuXr](https://documenter.getpostman.com/view/23218164/2s9YsFEuXr)
+- API Documentation: https://documenter.getpostman.com/view/23218164/2s9YsFEuXr
+
 
 ## Contributing
 
