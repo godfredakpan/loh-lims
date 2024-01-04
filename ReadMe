@@ -54,7 +54,20 @@ CloudClinic's Inventory Management Module is an extension of the Laboratory Info
 
    ```bash
    psql -U postgres
-   CREATE DATABASE your_database_name;
+
+   run this to create the database; createdb lights_lims_db
+
+   run this to login to your database, psql -U username(my own case, godfredakpan) -d lights_lims_db   
+ 
+    You will get a response like this; lights_lims_db=# 
+    
+    run this next; CREATE TABLE laboratory_supplies (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    quantity INT NOT NULL,
+    reorder_point INT NOT NULL
+    );
+
    ```
 
 4. **Run the Application:**
@@ -84,7 +97,7 @@ CloudClinic's Inventory Management Module is an extension of the Laboratory Info
 - Unit tests and comprehensive test cases have been implemented for the Inventory Management Module. Run tests using the following command:
 
   ```bash
-  cd server
+  cd backend
   npm test
   ```
 
