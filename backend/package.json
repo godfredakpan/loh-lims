@@ -16,7 +16,8 @@
     "chai": "^5.0.0",
     "chai-http": "^4.4.0",
     "cors": "^2.8.5",
-    "pg-promise": "^11.5.4"
+    "pg-promise": "^11.5.4",
+    "supertest": "^6.3.3"
   },
   "devDependencies": {
     "@babel/core": "^7.23.7",

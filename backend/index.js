@@ -34,10 +34,11 @@ db.connect();
 app.get("/", (req, res) => {
     res.send("LIMS API for Lights on Heights");
 });
-  
 
 app.use('/api/laboratory-supplies', laboratorySupplyRoutes);
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
+
+module.exports = app;
